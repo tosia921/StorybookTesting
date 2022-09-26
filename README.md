@@ -1,7 +1,11 @@
-This is a Vite project boilerplate that uses:
+Installing storybook
 
--   React
--   TypeScript
--   Tailwind CSS
--   EsLint
--   TypeChecking plugin
+npm sb init
+
+https://storybook.js.org/addons - all addons
+
+installed Addons:
+
+-   Designs
+-   Storysource
+-
