@@ -5,7 +5,7 @@ export interface DropdownProps {
 	items: {
 		label: string;
 		hasChildren: boolean;
-		itemChildrens: string[] | undefined;
+		itemChildrens?: string[] | undefined;
 	}[];
 }
 
@@ -18,13 +18,7 @@ export const Dropdown = ({ items }: DropdownProps) => {
 						{items &&
 							items.length > 0 &&
 							items.map((item) => {
-								return (
-									<DropdownItem
-										hasChildren={item.hasChildren}
-										itemChildrens={item.itemChildrens}
-										label={item.label}
-									/>
-								);
+								return <DropdownItem hasChildren={item.hasChildren} itemChildrens={item.itemChildrens} label={item.label} />;
 							})}
 					</ul>
 				</div>

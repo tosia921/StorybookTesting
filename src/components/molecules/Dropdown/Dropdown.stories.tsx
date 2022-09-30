@@ -1,5 +1,6 @@
 import React from 'react';
 import { Dropdown } from './Dropdown';
+import { DropdownItem } from '../../atoms/DropdownItem/DropdownItem';
 
 import { ComponentStory, ComponentMeta } from '@storybook/react';
 
@@ -13,6 +14,7 @@ export default {
 		},
 		layout: 'centered',
 	},
+	subcomponents: { DropdownItem },
 	// argTypes: {
 	// 	items: {
 	// 		control: {
@@ -43,7 +45,6 @@ DropdownPrimary.args = {
 		{
 			label: 'First link',
 			hasChildren: false,
-			itemChildrens: ['one', 'two', 'three'],
 		},
 		{
 			label: 'Second link',

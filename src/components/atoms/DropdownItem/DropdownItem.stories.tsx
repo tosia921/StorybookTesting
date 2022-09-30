@@ -23,7 +23,12 @@ const Template: ComponentStory<typeof DropdownItem> = ({ label, hasChildren, ite
 //defining varitions
 export const DropdownItemPrimary = Template.bind({});
 DropdownItemPrimary.args = {
-	label: 'Dashboard',
+	label: 'Dropdown Item',
+	hasChildren: false,
+};
+export const DropdownItemSecondary = Template.bind({});
+DropdownItemSecondary.args = {
+	label: 'Dropdown Item',
 	hasChildren: true,
 	itemChildrens: ['First Link', 'Second Link', 'Third Link'],
 };
